@@ -1,0 +1,34 @@
+services:
+  peer1:
+    image: cristians-server
+    networks:
+      - mynetwork
+    hostname: "peer1"
+
+  peer2:
+    image: cristians-peer
+    networks:
+      - mynetwork
+    hostname: "peer2"
+
+  peer3:
+    image: cristians-peer
+    netwrorks:
+      - mynetwrok
+    hostname: "peer3"
+
+  peer4:
+    image: cristians-peer
+    netwrorks:
+      - mynetwrok
+    hostname: "peer4"
+
+  peer3:
+    image: cristians-peer
+    netwrorks:
+      - mynetwrok
+    hostname: "peer5"
+  
+networks:
+  mynetwork: {}
+  
