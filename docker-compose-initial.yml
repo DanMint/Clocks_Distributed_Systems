@@ -1,0 +1,15 @@
+services:
+  server:
+    image: test1
+    networks:
+      - mynetwork
+    hostname: "server"
+
+  peer1:
+    image: test1
+    networks:
+      - mynetwork
+    hostname: "peer1"
+
+networks:
+  mynetwork: {}
