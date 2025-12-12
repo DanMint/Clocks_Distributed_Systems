@@ -4,12 +4,15 @@ services:
     networks:
       - mynetwork
     hostname: "server"
+    command: cristian
 
   peer1:
     image: test1
     networks:
       - mynetwork
-    hostname: "peer1"
+    hostname: ""
+    command: cristian
+
 
 networks:
   mynetwork: {}

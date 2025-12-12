@@ -1,9 +1,13 @@
 #pragma once
 
-class cristiansClock {
+class CristiansClock {
     public:
-        void start();    
+        CristiansClock();    
+
+        void startServer();
+        
+        void startPeer();
 
     private:
-        
+        std::string currentPeerId;
 };

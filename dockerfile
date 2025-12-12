@@ -8,6 +8,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN g++ -std=c++20 -I include src/cristiansClock.cpp src/main.cpp -o /app/main 
+RUN g++ -std=c++20 -I include src/cristiansClock.cpp src/utils.cpp src/main.cpp -o /app/main
 
 ENTRYPOINT ["/app/main"]
